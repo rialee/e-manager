@@ -1,20 +1,22 @@
 import React from "react";
 
 // SearchResult function (props) - component
-function SearchResult(props) {
+function ResultCard(props) {
 
   console.log(props)
 
-  // props: users (filteredUsers)
-  // button to filter by name 
-  // onClick will this.sortedUsers
-
   // return JSX
   return (
-    <div></div>
+
+    // loop through array
+    <div>
+
+
+      
+    </div>
   )
 
 }
 
 
-export default SearchResult;
+export default ResultCard;
