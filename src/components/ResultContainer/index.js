@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import API from "../../utils/API"
-import ResultTemplate from "../ResultTemplate"
+import API from "../../utils/API";
+import Result from "../Result";
 
 // main display on app page
 class ResultContainer extends React.Component {
@@ -113,18 +113,16 @@ class ResultContainer extends React.Component {
 
                 {/* result display table */}
                 <div className="row">
-                    <div className="table-title col"></div>
+                    
+                    <div className="table-title col-2">Photo</div>
                     <div className="table-title click col-3" onClick={this.handleSubmit}>Name:</div>
-                    <div className="table-title col">Phone:</div>
-                    <div className="table-title col">Email:</div>
-                    <div className="table-title col">Birthday:</div>
+                    <div className="table-title col-3">Phone:</div>
+                    <div className="table-title col-3">Email:</div>
+                    <div className="table-title col-2">Birthday:</div>
                 </div>
 
-                {/* {this.state.filteredUsers.map((user, index) => (
+                <Result results={this.state.filteredUsers} />
 
-                    <ResultTemplate user={user} key={index} />
-                )
-                )} */}
             </div>
         );
     }
