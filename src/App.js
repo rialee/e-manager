@@ -1,9 +1,18 @@
 import React from "react";
-import ResultDisplay from "./pages/Main";
+import ResultContainer from "./components/ResultContainer";
+import "./styles/App.css"
+import Header from "./components/Header"
 
 function App() {
 
-  return <ResultDisplay />
+  return (
+
+    <>
+    <Header />
+    {/* <ResultContainer /> */}
+
+    </>
+    )
 };
 
 export default App;

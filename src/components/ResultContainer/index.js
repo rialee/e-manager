@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/App.css";
-import API from "../utils/API.js"
-import Header from "../components/Header"
+import "./style.css";
+import API from "../../utils/API"
+import Header from "../Header"
 
 // main display on app page
 class ResultDisplay extends React.Component {

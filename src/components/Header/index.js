@@ -7,7 +7,7 @@ function Header() {
 
         // bootstrap jumbotron
 
-        <div> </div>
+        <div> Hi</div>
     )
 }
 
