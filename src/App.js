@@ -1,5 +1,5 @@
 import React from "react";
-import ResultDisplay from "./pages/ResultDisplay";
+import ResultDisplay from "./pages/Main";
 
 function App() {
 

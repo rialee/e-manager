@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 // SearchResult function (props) - component
 function ResultCard(props) {
