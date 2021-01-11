@@ -113,7 +113,7 @@ class ResultContainer extends React.Component {
 
                 {/* result display table */}
                 <div className="row">
-                    <div className="table-title col">Photo:</div>
+                    <div className="table-title col"></div>
                     <div className="table-title click col-3" onClick={this.handleSubmit}>Name:</div>
                     <div className="table-title col">Phone:</div>
                     <div className="table-title col">Email:</div>
