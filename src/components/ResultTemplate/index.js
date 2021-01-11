@@ -9,12 +9,8 @@ function ResultCard(props) {
   // return JSX
   return (
 
-    // loop through array
-    <div>
+    <div>Result</div>
 
-
-      
-    </div>
   )
 
 }

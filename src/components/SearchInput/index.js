@@ -8,11 +8,7 @@ function SearchInput(props) {
     // return JSX
     return (
         
-        <div>
-            <form className="form">
-                <input/>
-            </form>
-        </div>
+        <div> Search Input </div>
     )
 }
 
