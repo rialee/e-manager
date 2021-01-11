@@ -51,7 +51,7 @@ class ResultContainer extends React.Component {
 
                 // filter users by every letter entered in searchInpu
                 const filteredResult = this.state.allUsers.filter(
-                    (res) => res.name.first.toLowerCase().includes(this.state.searchInput.toLocaleLowerCase())
+                    (res) => res.name.first.toLowerCase().startsWith(this.state.searchInput.toLocaleLowerCase())
                 );
 
                 this.setState(
@@ -124,7 +124,7 @@ class ResultContainer extends React.Component {
                     {/* result display table */}
                     <div className="row title-row">
 
-                        <div className="title col-2">Photo</div>
+                        <div className="title col-2"></div>
                         <div className="title click col-2" onClick={this.HandleSortResult}>Name:</div>
                         <div className="title col-2">Phone:</div>
                         <div className="title col-3">Email:</div>
