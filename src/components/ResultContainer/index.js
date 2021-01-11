@@ -3,6 +3,7 @@ import "./style.css";
 import API from "../../utils/API";
 import Result from "../Result";
 
+
 // main display on app page
 class ResultContainer extends React.Component {
 
@@ -105,29 +106,32 @@ class ResultContainer extends React.Component {
             <div className="Result wrapper">
 
                 {/* search bar */}
-                <form>
+                <form className="search-block">
+
+
 
                     <input className="search-form" name="searchInput" type="text" aria-label="Search" onChange={this.handleInputChange} value={this.state.searchInput} placeholder="Enter Name Here"></input>
 
+                    {/* search button */}
+                    <button className="btn-light sort" onClick={this.HandleSortResult}>Sort by name</button>
+
                 </form>
 
-                {/* search button */}
-                <button className="btn-light sort" onClick={this.HandleSortResult}>Sort by name</button>
 
 
-                {/* result display table */}
-                <div className="row">
+                <div className="wrapper">
+                    {/* result display table */}
+                    <div className="row title-row">
+                        <div className="table-title col-2">Photo</div>
+                        <div className="table-title click col-3" onClick={this.HandleSortResult}>Name:</div>
+                        <div className="table-title col-3">Phone:</div>
+                        <div className="table-title col-3">Email:</div>
+                        <div className="table-title col-2">Birthday:</div>
+                    </div>
 
-                    <div className="table-title col-2">Photo</div>
-                    <div className="table-title click col-3" onClick={this.HandleSortResult}>Name:</div>
-                    <div className="table-title col-3">Phone:</div>
-                    <div className="table-title col-3">Email:</div>
-                    <div className="table-title col-2">Birthday:</div>
+
+                    <Result sortedResults={this.state.filteredUsers} />
                 </div>
-
-
-                <Result sortedResults={this.state.filteredUsers} />
-
 
             </div>
         );

@@ -9,9 +9,12 @@ function App() {
   return (
 
     <>
-    
-      {/* jumbotron header */}
-      <Header />
+      <div className="header">
+
+        {/* jumbotron header */}
+        <Header />
+
+      </div>
 
       {/* result container */}
       <ResultContainer />

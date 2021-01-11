@@ -1,4 +1,4 @@
-# e-manager
+# e-meet
 
 ### Project Introduction
 This a company-wide employee directory program allowing employees to view basic information about fellow colleagues by filtering by name as well as additional access to sensitive data for managers.
