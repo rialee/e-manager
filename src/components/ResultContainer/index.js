@@ -119,14 +119,17 @@ class ResultContainer extends React.Component {
 
 
 
-                <div className="wrapper">
+                <div className="wrapper result-container">
+                    
                     {/* result display table */}
                     <div className="row title-row">
-                        <div className="table-title col-2">Photo</div>
-                        <div className="table-title click col-3" onClick={this.HandleSortResult}>Name:</div>
-                        <div className="table-title col-3">Phone:</div>
-                        <div className="table-title col-3">Email:</div>
-                        <div className="table-title col-2">Birthday:</div>
+
+                        <div className="title col-2">Photo</div>
+                        <div className="title click col-2" onClick={this.HandleSortResult}>Name:</div>
+                        <div className="title col-2">Phone:</div>
+                        <div className="title col-3">Email:</div>
+                        <div className="title col-2">Birthday:</div>
+
                     </div>
 
 

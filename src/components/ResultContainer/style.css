@@ -1,8 +1,21 @@
-form.search-block{
+form.search-block {
     background-color: rgb(92, 143, 163);
-    padding: 2rem;
+    padding: 2rem
 }
 
-div.title-row{
-    background-color: rgb(255, 255, 255);
+form {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+div.result-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+div.title-row {
+    border-bottom:  rgb(92, 143, 163) solid 3px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    
 }
