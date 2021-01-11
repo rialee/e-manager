@@ -15,10 +15,10 @@ This is an employee management system built with React following the organizatio
     Display qualified results 
 
 ### Project Repository Link:
-https://github.com/rialee/e-manager
+https://github.com/rialee/e-meet
 
 ### Deploy Link:
-
+https://rialee.github.io/e-meet
 
 ### License
 MIT
