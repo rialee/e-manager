@@ -1,18 +1,22 @@
 import React from "react";
-import ResultContainer from "./components/ResultContainer";
+// import ResultContainer from "./components/ResultContainer";
 import "./styles/App.css"
 import Header from "./components/Header"
+
 
 function App() {
 
   return (
 
     <>
-    <Header />
-    {/* <ResultContainer /> */}
+    
+      {/* jumbotron header */}
+      <Header />
+
+      {/* result container */}
 
     </>
-    )
+  )
 };
 
 export default App;
