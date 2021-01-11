@@ -11,7 +11,7 @@ class ResultContainer extends React.Component {
         allUsers: [],
         filteredUsers: [],
         searchInput: "",
-        sortOptions: ""
+        sortOptions: "",
     };
 
     // component did mount
@@ -49,8 +49,9 @@ class ResultContainer extends React.Component {
             () => {
 
                 // filter users by every letter entered in searchInpu
-                const filteredResult = this.state.allUsers
-                    .filter((res) => res.name.first.includes(this.state.searchInput));
+                const filteredResult = this.state.allUsers.filter(
+                    (res) => res.name.first.toLowerCase().includes(this.state.searchInput.toLocaleLowerCase())
+                );
 
                 this.setState(
                     {
@@ -100,28 +101,33 @@ class ResultContainer extends React.Component {
 
     render() {
         return (
-            <div className="Result">
+
+            <div className="Result wrapper">
 
                 {/* search bar */}
-                <nav className="navbar navbar-light bg-light mx-auto" style={{ height: "100px" }}>
+                <form>
 
-                    <form className="form-inline">
-                        <input className="form-control mr-sm-2" name="searchTerm" type="text" placeholder="Search" aria-label="Search" onChange={this.handleSearchChange} value={this.state.searchTerm}></input>
-                    </form>
-                    <button className="btn-light sort" onClick={this.handleSubmit}>Sort by name</button>
-                </nav>
+                    <input className="search-form" name="searchInput" type="text" aria-label="Search" onChange={this.handleInputChange} value={this.state.searchInput} placeholder="Enter Name Here"></input>
+
+                </form>
+
+                {/* search button */}
+                <button className="btn-light sort" onClick={this.HandleSortResult}>Sort by name</button>
+
 
                 {/* result display table */}
                 <div className="row">
-                    
+
                     <div className="table-title col-2">Photo</div>
-                    <div className="table-title click col-3" onClick={this.handleSubmit}>Name:</div>
+                    <div className="table-title click col-3" onClick={this.HandleSortResult}>Name:</div>
                     <div className="table-title col-3">Phone:</div>
                     <div className="table-title col-3">Email:</div>
                     <div className="table-title col-2">Birthday:</div>
                 </div>
 
-                <Result results={this.state.filteredUsers} />
+
+                <Result sortedResults={this.state.filteredUsers} />
+
 
             </div>
         );
