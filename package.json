@@ -1,6 +1,6 @@
 {
-  "homepage": "http://rialee.github.io/e-manager",
-  "name": "app",
+  "homepage": "http://rialee.github.io/e-meet",
+  "name": "e-meet",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
